@@ -1,0 +1,60 @@
+@import '../../../global-styles/settings';
+
+.calculator-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    color: $text-white;
+    cursor: pointer;
+    flex: 0 0 $calculator-button-width;
+    font-size: $font-size-medium;
+    height: $calculator-button-height;
+    outline : none;
+    position: relative;
+    text-align: center;
+    width: $calculator-button-width;
+
+    &--action,
+    &--action-larger {
+        background: $calculator-action-button;
+
+        &:hover {
+        @include lighten( $calculator-action-button )
+        }
+
+        &:active {
+        @include darken( $calculator-action-button )
+        }
+    }
+
+    &--operand {
+        background: $calculator-operand-button;
+
+        &:hover {
+        @include lighten( $calculator-operand-button )
+        }
+
+        &:active {
+        @include darken( $calculator-operand-button )
+        }
+    }
+
+    &--operation {
+        background: $calculator-operation-button;
+
+        &:hover {
+        @include lighten( $calculator-operation-button )
+        }
+
+        &:active {
+        @include darken( $calculator-operation-button )
+        }
+
+    }
+
+    &--action-larger {
+        flex: 0 0 $calculator-button-width-large;
+        width: $calculator-button-width-large;
+    }
+}

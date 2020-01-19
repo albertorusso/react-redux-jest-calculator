@@ -1,0 +1,7 @@
+@import '../../../global-styles/settings';
+
+.calculator-actions {
+    border-bottom: 1px solid $border-dark-grey;
+    display: flex;
+    width: $calculator-main-keyboard-width;
+}

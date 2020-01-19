@@ -1,0 +1,15 @@
+@import '../../../global-styles/settings';
+
+.calculator-operands {
+    display: flex;
+    flex-direction: column;
+    width: $calculator-main-keyboard-width;
+  
+    &__button-row:not(:last-child) {
+      border-bottom: 1px solid $border-dark-grey;
+    }
+  
+    &__button-container {
+      display: inline-block;
+    }
+  }

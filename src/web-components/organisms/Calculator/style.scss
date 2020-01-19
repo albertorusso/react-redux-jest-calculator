@@ -1,0 +1,31 @@
+@import '../../../global-styles/settings';
+
+.calculator {
+
+  max-width: $calculator-width;
+
+  &__keyboard {
+    display: flex;
+  }
+
+  &__main-keyboard {
+    flex-grow: 3;
+  }
+
+  &__operations-keyboard {
+    flex-grow: 1;
+  }
+
+  &__actions-section {
+    background: $calculator-action-button;
+  }
+
+  &__operands-section {
+    background:  $calculator-operand-button;
+  }
+
+  &__operations-section {
+    background: $calculator-operation-button;
+  }
+
+}
