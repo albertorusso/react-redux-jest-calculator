@@ -37,6 +37,7 @@
     "@storybook/addon-docs": "^5.3.3",
     "@storybook/addon-info": "^5.3.3",
     "@storybook/react": "^5.3.3",
+    "jest": "^24.9.0",
     "node-sass": "^4.13.0"
   }
 }
